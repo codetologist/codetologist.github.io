@@ -1,0 +1,47 @@
+.background-image {
+    /* The image used */
+    background-image: url("https://images.unsplash.com/photo-1541240290619-3f2fad86473d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+   .container-fluid .custom-button{
+      background-color :#0F5B69 ;
+      color: white;
+      border-radius: 5px;
+      position: absolute;
+      top: 80%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      font-size: 16px;
+      padding: 16px 50px;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+  }
+
+  .container-fluid .custom-text{
+    position: absolute;
+    top: 15%;
+    width:100%;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+  }
+
+  .container-fluid .custom-button:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .jumbotron-fluid{
+    height: 100vh;
+  }
+
+  .container-fluid{
+    padding: 0;
+  }
