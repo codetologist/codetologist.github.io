@@ -1,0 +1,12 @@
+/*****************************/
+/********* Footer ************/
+/*****************************/
+.footer {
+    background-color: #fff;
+    /*box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }

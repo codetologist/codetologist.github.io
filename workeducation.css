@@ -1,0 +1,80 @@
+/******************************/
+/***** Work Section *******/
+/******************************/
+
+.work{
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.work h1{
+    color: #0F5B69;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.work .cards section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 50vh;
+    box-sizing: border-box;
+    margin: 1rem .25em;
+    background-color: white;
+}
+
+.work figcaption{
+    display: none;
+}
+
+.work .cards{
+    display: flex;  
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center;
+}
+
+
+/******************************/
+/***** Education Section *******/
+/******************************/
+
+.education{
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.education h1{
+    color: #0F5B69;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.education .cards section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 50vh;
+    box-sizing: border-box;
+    margin: 1rem .25em;
+    background-color:white;
+}
+
+.education figcaption{
+    display: none;
+}
+
+.education .cards{
+    display: flex;  
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center;
+}

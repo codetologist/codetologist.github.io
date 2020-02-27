@@ -4,26 +4,156 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <!--Google Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Site CSS-->
     <link rel="stylesheet" type="text/css" href="style.css">
-
-    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="topnav.css">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" type="text/css" href="services.css">
+    <link rel="stylesheet" type="text/css" href="workeducation.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <title>Codetologist</title>
   </head>
-  <body>
-    <div class="container-fluid">
-            <div class="jumbotron-fluid background-image">
-                    <p class="custom-text">The biggest startup event of the year</p>
-                    <a class="btn custom-button" href="#" role="button">Find out more</a>
-            </div>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <body id='page-top' class="parallax-background">
+      <!--Navigation-->
+      <header class="header">
+        <a href="" class="logo">Codetologist</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+      </header>
+
+      <!--About / Short Intro-->
+      <article class="about">
+        <figure>
+          <img src="./img/face.png" alt="Codetologist">
+          <figcaption>Codetologist</figcaption>
+        </figure>
+        <section>
+          <p class="custom-text">Professional Software Developer with over 9 years of 
+          experience in the aerospace industry. Passionate about
+          continuous learning, best practices and project management 
+          methodologies.</p>
+        </section>        
+        
+          <a class="btn custom-button" href="#" role="button">Download Resume</a>
+        
+      </article> 
+
+      <article class="services">
+        <a name="services"></a>
+        <h1>Services</h1>
+        <section>
+          Software Development
+        </section>
+        <section>
+          Testing
+        </section>
+      </article>
+      
+      <article class="work">
+        <a name="work"></a>
+        <h1>Work Experience</h1>
+        <div class="cards">
+          <section>
+            <figure><img src="./img/DXC_logo.jpg" alt="DXC Technology"></figure>
+            <figcaption>DXC Technology</figcaption>
+            <h1>Professional Programmer Analyst</h1>
+            <p>
+              Software developer for the Custom Application Services (CAS) team.
+               Developed web application using C#, MVC, Entitiy Framework, REST 
+               API, MS Visual Studio. Developed document generator software 
+               using Windows Forms, Model-View-Presenter, DAO. Supported the 
+               SharePoint Enhancements team, on a customer request's basis, 
+               developing SharePoint Site Pages using HTML, CSS, Javascript, 
+               InfoPath forms, Nintext Workflows and AgilePoint Workflows.
+            </p>
+          </section>
+          <section>
+            <figure><img src="./img/LORD_logo.jpg" alt="Lord Corporation"></figure>
+            <figcaption>Empresas Oneill</figcaption>
+            <h1>Software Analyst</h1>
+            <p>
+              Designed, developed and maintained test software for automated 
+              product testing (NI TestStand, Python) in an agile development
+               environment following industry guidelines for developing
+                avionics software.
+            </p>
+          </section>
+          <section>
+            <figure><img src="./img/honeywell_logo.jpg" alt="Honeywell Aerospace"></figure>
+            <figcaption>Honeywell Aerospace</figcaption>
+            <h1>Test Engineer</h1>
+            <p> Designed, developed and maintained test software for automated
+               test equipment using National Instruments tools such as 
+               LabWindows/CVI, TestStand and LabView. Completed multiple Test
+                Equipment Readiness reviews, test equipment installation and
+                 final check out at customer's facility. Supported unit testing
+                software using Python's unit testing framework. Wrote technical
+                 documentation and presentations. Lead multiple reviews per
+                  company established processes. Worked with internal and 
+                  external customers in all phases of the software development
+                   life cycle.</p>
+          </section>
+          <section>
+            <figure><img src="./img/Infotech_logo.gif" alt="Infotech Aerospace Services"></figure>
+            <figcaption>Infotech Aerospace Services</figcaption>
+            <h1>Specialist I</h1>
+            <p>Enhanced legacy software written in Matlab and Simulink on
+               a customer change request basis. Developed web applications
+                using Java, Struts, Oracle Weblogic Server and PostgreSQL.
+                 Wrote technical documentation and presentations. Worked
+                  with internal and external customers in all phases of
+                   the software development life cycle.</p>
+          </section>
+        </div> <!-- end of cards-->
+      </article>
+
+      <article class="education">
+        <a name="education"></a>
+        <h1>My Education</h1>
+        <div class="cards">
+        <section>
+          <figure><img src="./img/udemy_logo.png" alt="Udemy"></figure>
+          <figcaption>Udemy</figcaption>
+          <h1>Udemy</h1>
+
+        </section>
+        <section>
+          <figure><img src="./img/politecnica_logo.png" alt="Politechnic University of Puerto Rico"></figure>
+          <figcaption>Politechnic University of Puerto Rico</figcaption>
+          <h1>Politechnic University of Puerto Rico</h1>
+    
+        </section>
+        <section>
+          <figure><img src="./img/uprm_logo.png" alt="University of Puerto Rico"></figure>
+          <figcaption>University of Puerto Rico</figcaption>
+          <h1>Univertisy of Puerto Rico</h1>
+          
+        </section>
+      </div>
+      </article>
+
+      <footer class="footer">
+        <p>Copyright &copy; 2020 Codetologist. All rights reserved.</p>
+        <address>
+          Please contact <a href='mailto:info@codetologist.com'>
+            Alberto Ramos
+          </a> for more information.
+        </address>
+      </footer>
+    
+    <script src="script.js"></script>
   </body>
 </html>

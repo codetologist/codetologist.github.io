@@ -1,47 +1,48 @@
-.background-image {
-    /* The image used */
+/******************************/
+/****** General Styles ********/
+/******************************/
+
+/*h1, h2, h3, h4 { ... }*/
+/*ul { ... }*/
+/*blockquote { ... }*/
+/* || Typography */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /*Clear the flow*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+body{
+  margin: auto 0; /*Normalizing CSS - test with other browsers*/
+  display: flex; /*flex || inline-flex*/
+  flex-direction: column; /* row || column || row-reverse || column-reverse*/
+  flex-wrap: nowrap; /*nowrap || wrap || wrap-reverse*/
+  /*flex-flow: column nowrap;*/ /*<'flex-direction'> || <'flex-wrap'>*/
+  /*justify-content: flex-start*/ ; /*flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe*/
+  /*align-items: stretch ;*//*stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe*/
+  /*align-content: flex-start;*/ /*flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe*/
+  }
+
+  .parallax-background {
     background-image: url("https://images.unsplash.com/photo-1541240290619-3f2fad86473d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
-  
-    /* Center and scale the image nicely */
+    min-height: 100vh;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-   .container-fluid .custom-button{
-      background-color :#0F5B69 ;
-      color: white;
-      border-radius: 5px;
-      position: absolute;
-      top: 80%;
-      left:50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      font-size: 16px;
-      padding: 16px 50px;
-      border: none;
-      cursor: pointer;
-      text-align: center;
-  }
-
-  .container-fluid .custom-text{
-    position: absolute;
-    top: 15%;
-    width:100%;
-    font-size: 30px;
-    color: white;
-    text-align: center;
-  }
-
-  .container-fluid .custom-button:hover {
-    background-color: black;
-    color: white;
-  }
-
-  .jumbotron-fluid{
-    height: 100vh;
-  }
-
-  .container-fluid{
-    padding: 0;
-  }
+/********************************************/
+/**Semantic HTML CSS Legacy Considerations***/
+/********************************************/
+section, article, aside, footer, header, nav {
+  display: block;
+}
