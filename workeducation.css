@@ -2,13 +2,14 @@
 /***** Work Section *******/
 /******************************/
 
+/*
 .work{
     min-height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .work h1{
     color: #0F5B69;
@@ -20,11 +21,18 @@
 .work .cards section{
     display: flex;
     flex-direction: column;
+    flex-basis: 50vh;
+    flex-grow: 1;
+    flex-shrink: 1;
     align-items: center;
-    flex: 1 1 50vh;
-    box-sizing: border-box;
-    margin: 1rem .25em;
-    background-color: white;
+    
+    margin: 0.50em .50em;
+    background-color: white;    
+    border-radius: 4px;
+}
+
+.work .cards section p{
+    margin:1em;
 }
 
 .work figcaption{
@@ -34,22 +42,42 @@
 .work .cards{
     display: flex;  
     flex-wrap: wrap;
-    align-items: center; 
+    align-items: stretch; 
     justify-content: center;
+    
+}
+
+@media only screen and (min-width : 38em) and (max-width : 55em){
+    .work .cards{
+        flex-direction: column;
+    }
+
+    .work .cards section{
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .work figcaption{
+     display: none;
+    }
+
+    .work .cards section h1{
+        display:none;
+    }
+
+    .work .cards section:nth-child(odd){
+        flex-direction: row;
+    }
+
+    .work .cards section:nth-child(even){
+        flex-direction: row-reverse;
+    }
 }
 
 
 /******************************/
 /***** Education Section *******/
 /******************************/
-
-.education{
-    min-height: 75vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 .education h1{
     color: #0F5B69;
@@ -58,23 +86,67 @@
     text-align: center;
 }
 
+.education .cards section h1{
+    display: none;
+}
+
 .education .cards section{
     display: flex;
     flex-direction: column;
+    flex-basis: 50vh;
+    flex-grow: 1;
+    flex-shrink: 1;
     align-items: center;
-    flex: 1 1 50vh;
-    box-sizing: border-box;
-    margin: 1rem .25em;
+    
+    margin: .50em .50em;
     background-color:white;
+    border-radius: 4px;
+}
+
+.education .cards section p{
+    margin:1em;
+}
+
+ul{
+    list-style: none;
 }
 
 .education figcaption{
-    display: none;
+    color: #0F5B69;
+    /*display: none;*/
 }
 
 .education .cards{
     display: flex;  
     flex-wrap: wrap;
-    align-items: center; 
+    align-items: stretch; 
     justify-content: center;
+}
+
+
+@media only screen and (min-width : 38em) and (max-width : 55em){
+    .education .cards{
+        flex-direction: column;
+    }
+
+    .education .cards section{
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .education figcaption{
+     display: none;
+    }
+
+    .education .cards section p{
+        display:none;
+    }
+
+    .education .cards section:nth-child(odd){
+        flex-direction: row;
+    }
+
+    .education .cards section:nth-child(even){
+        flex-direction: row-reverse;
+    }
 }
