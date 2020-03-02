@@ -21,9 +21,7 @@
 .work .cards section{
     display: flex;
     flex-direction: column;
-    flex-basis: 50vh;
-    flex-grow: 1;
-    flex-shrink: 1;
+    flex: 1 1 calc(50vh - 1em);
     align-items: center;
     
     margin: 0.50em .50em;
@@ -47,7 +45,7 @@
     
 }
 
-@media only screen and (min-width : 38em) and (max-width : 55em){
+@media only screen and (min-width : 38em) and (max-width : 60em){
     .work .cards{
         flex-direction: column;
     }
@@ -74,6 +72,12 @@
     }
 }
 
+@media only screen and (min-width : 60em){
+    .work .cards section{
+        flex-grow: 0;
+    }
+}
+
 
 /******************************/
 /***** Education Section *******/
@@ -93,9 +97,10 @@
 .education .cards section{
     display: flex;
     flex-direction: column;
-    flex-basis: 50vh;
+    /*flex-basis: 50vh;
     flex-grow: 1;
-    flex-shrink: 1;
+    flex-shrink: 1;*/
+    flex: 1 1 calc(50vh - 1em);
     align-items: center;
     
     margin: .50em .50em;
@@ -124,7 +129,7 @@ ul{
 }
 
 
-@media only screen and (min-width : 38em) and (max-width : 55em){
+@media only screen and (min-width : 38em) and (max-width : 60em){
     .education .cards{
         flex-direction: column;
     }
@@ -148,5 +153,11 @@ ul{
 
     .education .cards section:nth-child(even){
         flex-direction: row-reverse;
+    }
+}
+
+@media only screen and (min-width : 62em){
+    .education .cards section{
+        flex-grow: 0;
     }
 }
