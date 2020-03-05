@@ -12,16 +12,21 @@
     padding: 0;
     box-sizing: border-box;
   }
-
+ 
   /*Clear the flow*/
-.row::after {
+  .row::after {
     content: "";
     clear: both;
     display: table;
   }
 
+html{
+  display: flex;
+  justify-content: center;
+}
+
 body{
-  margin: auto 0; /*Normalizing CSS - test with other browsers*/
+  /*margin: auto 0; /*Normalizing CSS - test with other browsers*/
   display: flex; /*flex || inline-flex*/
   flex-direction: column; /* row || column || row-reverse || column-reverse*/
   flex-wrap: nowrap; /*nowrap || wrap || wrap-reverse*/
@@ -29,7 +34,9 @@ body{
   /*justify-content: flex-start*/ ; /*flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe*/
   /*align-items: stretch ;*//*stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe*/
   /*align-content: flex-start;*/ /*flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe*/
-  }
+
+  max-width: 1200px;
+}
 
   .parallax-background {
     background-image: url("https://images.unsplash.com/photo-1541240290619-3f2fad86473d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
@@ -40,9 +47,12 @@ body{
     background-size: cover;
   }
 
+
 /********************************************/
 /**Semantic HTML CSS Legacy Considerations***/
 /********************************************/
+
 section, article, aside, footer, header, nav {
   display: block;
 }
+
