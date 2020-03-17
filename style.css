@@ -36,6 +36,8 @@ body{
   /*align-content: flex-start;*/ /*flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe*/
 
   max-width: 1200px;
+
+  font-family: 'Open Sans', sans-serif;
 }
 
   .parallax-background {

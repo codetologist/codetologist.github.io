@@ -1,0 +1,56 @@
+
+:root {
+    --linkedin: f08c;
+    --website: f0ac;
+    --github: f092;
+    --email: f199;
+    --tag: f02b;
+    --graduate: f501;
+    --professional: f508;
+    --briefcase: f0b1;
+    --laptop-code: f5fc;
+    --star: f005;
+  }
+
+body {  
+    display: flex;
+    min-height: 100vh; /*Might need to remove this later*/
+
+}
+
+aside {   
+    width: 20vw;
+    background-color: lightgrey;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+main {
+    flex: 1;    
+    padding: 1vw;
+}
+
+img{
+  max-width:150px;
+  display: block;
+  height: auto;
+  border-radius: 50%;
+  border-color: black;
+  border-style: solid;
+  padding : 2px;
+  margin: 0px;
+}
+
+figcaption{
+    text-align: center;
+    display: none;
+}
+
+@media screen{
+
+  }
+
+@media print{
+
+}
